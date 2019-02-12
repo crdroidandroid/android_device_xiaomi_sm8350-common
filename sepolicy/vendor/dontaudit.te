@@ -1,3 +1,5 @@
 dontaudit {
   hal_camera_default
 } default_prop:file r_file_perms;
+
+dontaudit untrusted_app ashmem_device:chr_file open;
