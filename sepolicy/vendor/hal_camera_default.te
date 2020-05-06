@@ -13,3 +13,5 @@ add_hwservice(hal_camera_server, vendor_hal_cameraperf_hwservice)
 add_hwservice(hal_camera_server, vendor_hal_camerapostproc_xiaomi_hwservice)
 allow hal_camera_client vendor_hal_cameraperf_hwservice:hwservice_manager find;
 allow hal_camera_client vendor_hal_camerapostproc_xiaomi_hwservice:hwservice_manager find;
+
+allow hal_camera_default public_adsprpcd_file:file r_file_perms;
