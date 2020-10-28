@@ -261,3 +261,6 @@ vendor.usb.use_ffs_mtp=1
 wifi.aware.interface=wifi-aware0
 
 persist.vendor.console.silent.config=1 
+
+# Zygote
+zygote.critical_window.minute=10
