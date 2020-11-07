@@ -10,3 +10,6 @@ ro.lmk.swap_free_low_percentage=100
 
 # Phantom process monitoring
 persist.sys.fflag.override.settings_enable_monitor_phantom_procs=false
+
+# RescueParty (Disable it due to high risk of data loss)
+persist.sys.disable_rescue=true
