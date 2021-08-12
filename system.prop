@@ -48,6 +48,7 @@ ro.vendor.qti.sys.fw.bservice_enable=true
 
 # Radio
 DEVICE_PROVISIONED=1
+persist.vendor.qti.telephony.vt_cam_interface=2
 ril.subscription.types=NV,RUIM
 
 # Radio VoNR Calling
