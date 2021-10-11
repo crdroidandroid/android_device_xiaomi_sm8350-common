@@ -38,7 +38,7 @@
         android:directBootAware="true"
         android:theme="@style/Theme.SubSettingsBase">
 
-        <receiver android:name=".BootCompletedReceiver">
+        <receiver android:name=".BootCompletedReceiver" android:exported="false">
             <intent-filter android:priority="1000">
                 <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -48,6 +48,7 @@
         <activity
             android:name=".dirac.DiracActivity"
             android:label="@string/dirac_title"
+            android:exported="true"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
@@ -59,12 +60,14 @@
         </activity>
 
         <service android:name=".doze.DozeService"
+                 android:exported="true"
                  android:permission="XiaomiDozeService">
         </service>
 
         <activity
             android:name=".doze.DozeSettingsActivity"
-            android:label="@string/ambient_display_title">
+            android:label="@string/ambient_display_title"
+            android:exported="true">
         </activity>
 
         <service
@@ -82,7 +85,8 @@
 
         <activity
             android:name=".thermal.ThermalActivity"
-            android:label="@string/thermal_title">
+            android:label="@string/thermal_title"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
@@ -99,7 +103,8 @@
 
         <activity
             android:name=".speaker.ClearSpeakerActivity" 
-            android:label="@string/clear_speaker_title">
+            android:label="@string/clear_speaker_title"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
@@ -110,13 +115,14 @@
 
         <service
             android:name=".thermal.ThermalService"
+            android:exported="true"
             android:permission="ThermalService">
         </service>
 
         <activity
             android:name=".refreshrate.RefreshActivity"
             android:label="@string/refresh_title"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
