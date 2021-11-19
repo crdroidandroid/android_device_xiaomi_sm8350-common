@@ -236,6 +236,7 @@ debug.hwui.target_cpu_time_percent=18
 debug.stagefright.c2inputsurface=-1
 media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.config.vc_call_vol_steps=11
+persist.mm.enable.prefetch=true
 
 # NFC
 ro.vendor.nfc.repair=1
