@@ -284,6 +284,7 @@ ro.incremental.enable=yes
 vendor.sys.thermal.data.path=/data/vendor/thermal/
 
 # USB
+persist.vendor.usb.config=mtp,adb
 sys.usb.mtp.batchcancel=1
 vendor.usb.controller=a600000.dwc3
 vendor.usb.diag.func.name=ffs
