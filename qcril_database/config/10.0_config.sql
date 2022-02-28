@@ -12,4 +12,4 @@ UPDATE qcril_properties_table SET def_val="1" WHERE property="persist.vendor.rad
 UPDATE qcril_properties_table SET def_val="1" WHERE property="persist.vendor.radio.cs_srv_type";
 UPDATE qcril_properties_table SET def_val="0" WHERE property="persist.vendor.radio.always_send_plmn";
 UPDATE qcril_properties_table SET def_val="true" WHERE property="persist.vendor.radio.process_sups_ind";
-UPDATE qcril_properties_table SET def_val="true" WHERE property="persist.vendor.radio.redir_party_num";
+UPDATE qcril_properties_table SET def_val="false" WHERE property="persist.vendor.radio.redir_party_num";
