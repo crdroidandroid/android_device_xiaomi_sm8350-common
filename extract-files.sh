@@ -82,6 +82,9 @@ function blob_fixup() {
         vendor/lib64/hw/camera.qcom.so)
             sed -i "s/\x73\x74\x5F\x6C\x69\x63\x65\x6E\x73\x65\x2E\x6C\x69\x63/\x63\x61\x6D\x65\x72\x61\x5F\x63\x6E\x66\x2E\x74\x78\x74/g" "${2}"
             ;;
+        vendor/etc/camera/star_motiontuning.xml|vendor/etc/camera/mars_motiontuning.xml|vendor/etc/camera/vili_motiontuning.xml)
+            sed -i 's/xml=version/xml\ version/g' "${2}"
+	    ;;
     esac
 }
 
