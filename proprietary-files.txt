@@ -125,7 +125,13 @@ vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
-# Display - from sunstone
+# Diag
+vendor/bin/diag-router
+vendor/etc/init/vendor.qti.diag.rc
+vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml
+vendor/lib64/vendor.qti.diaghal@1.0.so
+
+# Display - from sunstone V816.0.8.0.UMQMIXM
 vendor/etc/display/DPU660.xml|b26dd73e361546d89bf3d7082a471703dc6ac2cb
 vendor/etc/display/DPU670.xml|e5131a60ceff29ca5eb561eec7eddadef1d0486f
 vendor/etc/display/DPU720.xml|4e54e8712d65773eb87867bf64a4cb98ea9bb8c3
