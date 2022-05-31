@@ -1,2 +1,5 @@
 # DPM
 persist.vendor.dpm.feature=11
+
+# Bluetooth
+persist.vendor.btstack.enable.lpa=true
