@@ -396,9 +396,6 @@ vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-qti.so
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
-# IFAA Service
--vendor/app/IFAAService/IFAAService.apk:vendor/app/IFAAServiceXiaomism8350/IFAAServiceXiaomism8350.apk
-
 # IMS
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdaemon
