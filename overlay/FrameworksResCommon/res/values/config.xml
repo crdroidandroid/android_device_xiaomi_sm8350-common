@@ -178,15 +178,6 @@
     <!-- Whether the Unprocessed audio source supports the required frequency range and level -->
     <bool name="config_supportAudioSourceUnprocessed">true</bool>
 
-    <!-- Idle current for bluetooth controller. 0 by default-->
-    <integer name="config_bluetooth_idle_cur_ma">6</integer>
-
-    <!-- Rx current for bluetooth controller. 0 by default-->
-    <integer name="config_bluetooth_rx_cur_ma">28</integer>
-
-    <!-- Tx current for bluetooth controller. 0 by default-->
-    <integer name="config_bluetooth_tx_cur_ma">36</integer>
-
     <!-- Flag indicating whether the we should enable the automatic brightness in Settings.
          Software implementation will be used if config_hardware_auto_brightness_available is not set -->
     <bool name="config_automatic_brightness_available">true</bool>
