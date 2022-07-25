@@ -40,7 +40,6 @@ genfscon sysfs /devices/platform/soc/99c000.qcom,qup_uart/wakeup u:object_r:sysf
 genfscon sysfs /devices/platform/soc/a300000.qcom,turing/subsys7/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/a300000.qcom,turing/subsys6/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/a300000.qcom,turing/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/a600000.ssusb/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/a8c000.spi/spi_master/spi1/spi1.0/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/aab0000.qcom,venus/subsys0/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/aab0000.qcom,venus/subsys7/wakeup u:object_r:sysfs_wakeup:s0
