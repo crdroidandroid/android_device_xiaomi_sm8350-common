@@ -374,18 +374,35 @@ ndk::ScopedAStatus Vibrator::on(int32_t timeoutMs,
 
 ndk::ScopedAStatus Vibrator::perform(Effect effect, EffectStrength es, const std::shared_ptr<IVibratorCallback>& callback, int32_t* _aidl_return) {
     long playLengthMs;
-    int ret;
+    int ret, index = 0;
 
     ALOGD("Vibrator perform effect %d", effect);
 
-    if (effect < Effect::CLICK ||
-            effect > Effect::HEAVY_CLICK)
-        return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
+    switch (effect) {
+        case Effect::CLICK:
+            index = 0;
+            break;
+        case Effect::DOUBLE_CLICK:
+            index = 1;
+            break;
+        case Effect::TEXTURE_TICK:
+        case Effect::TICK:
+            index = 2;
+            break;
+        case Effect::THUD:
+            index = 3;
+            break;
+        case Effect::POP:
+            index = 4;
+            break;
+        case Effect::HEAVY_CLICK:
+            index = 5;
+            break;
+        default:
+            return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
+    }
 
-    if (es != EffectStrength::LIGHT && es != EffectStrength::MEDIUM && es != EffectStrength::STRONG)
-        return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
-
-    ret = ff.playEffect((static_cast<int>(effect)), es, &playLengthMs);
+    ret = ff.playEffect(index, es, &playLengthMs);
     if (ret != 0)
         return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_SERVICE_SPECIFIC));
 
