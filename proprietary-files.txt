@@ -378,9 +378,6 @@ vendor/firmware/a660_zap.mdt
 
 # IMS
 -system_ext/priv-app/ims/ims.apk
-system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar
-system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar
-system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar
 system_ext/lib64/lib-imsvideocodec.so
 system_ext/lib64/lib-imsvt.so
 system_ext/lib64/lib-imsvtextutils.so
@@ -390,9 +387,7 @@ system_ext/lib64/libimscamera_jni.so
 system_ext/lib64/libimsmedia_jni.so
 system_ext/lib64/vendor.qti.diaghal@1.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
--system_ext/app/ImsRcsService/ImsRcsService.apk
 -system_ext/priv-app/ims/ims.apk
-system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
 vendor/bin/imsdaemon
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdaemon
