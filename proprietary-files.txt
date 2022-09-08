@@ -16,7 +16,6 @@ vendor/lib64/soundfx/libmisoundfx.so
 
 # Audio HAL
 vendor/lib/hw/audio.primary.lahaina.so
-vendor/lib/liba2dpoffload.so
 vendor/lib/libadm.so
 vendor/lib/libaudioconfigstore.so
 vendor/lib/libaudio_log_utils.so
@@ -47,13 +46,6 @@ vendor/lib64/libsoc_helper.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
-
-# Bluetooth (A2DP)
-vendor/lib/btaudio_offload_if.so
-vendor/lib/hw/audio.bluetooth_qti.default.so
-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
-vendor/lib/libbluetooth_audio_session_qti.so
-vendor/lib/libbluetooth_audio_session_qti_2_1.so
 
 # Bluetooth (aptX) - from sunfish RQ1A.201205.008
 system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
