@@ -396,7 +396,7 @@ ndk::ScopedAStatus Vibrator::perform(Effect effect, EffectStrength es, const std
             index = 4;
             break;
         case Effect::HEAVY_CLICK:
-            index = 5;
+            index = 0;
             break;
         default:
             return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
