@@ -1,11 +1,13 @@
 type vendor_fingerprint_data_file, data_file_type, file_type;
 type vendor_fingerprint_device, dev_type;
 type vendor_hal_fingerprint_hwservice_xiaomi, hwservice_manager_type;
+type vendor_sysfs_fod, sysfs_type, fs_type;
 type vendor_sysfs_udfps, sysfs_type, fs_type;
 vendor_internal_prop(vendor_fp_prop)
 vendor_internal_prop(vendor_fp_info_prop)
 
 # Binder
+add_hwservice(hal_fingerprint_default, vendor_hal_fingerprint_hwservice_xiaomi)
 allow hal_fingerprint_default vendor_hal_fingerprint_hwservice_xiaomi:hwservice_manager find;
 allow hal_fingerprint_default vendor_hal_perf_default:binder call;
 allow hal_fingerprint_default vendor_hal_perf_hwservice:hwservice_manager find;
@@ -13,6 +15,9 @@ allow hal_fingerprint_default vendor_hal_perf_hwservice:hwservice_manager find;
 # Props
 set_prop(hal_fingerprint_default, vendor_fp_prop)
 set_prop(hal_fingerprint_default, vendor_fp_info_prop)
+
+# Netlink_socket
+allow hal_fingerprint_default self:netlink_socket create_socket_perms_no_ioctl;
 
 # Sysfs
 allow hal_fingerprint_default sysfs_rtc:dir r_dir_perms;
@@ -28,7 +33,12 @@ allow hal_fingerprint_default vendor_sysfs_graphics:file rw_file_perms;
 # Dev nodes
 allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
 allow hal_fingerprint_default uhid_device:chr_file rw_file_perms;
+allow hal_fingerprint_default vendor_fingerprint_device:chr_file rw_file_perms;
 
 # Data
 allow hal_fingerprint_default vendor_fingerprint_data_file:dir rw_dir_perms;
 allow hal_fingerprint_default vendor_fingerprint_data_file:file create_file_perms;
+allow hal_fingerprint_default vendor_sysfs_fod:file rw_file_perms;
+
+allow hal_fingerprint_default rootfs:dir { read open };
+allow hal_fingerprint_default system_data_root_file:dir r_dir_perms;
