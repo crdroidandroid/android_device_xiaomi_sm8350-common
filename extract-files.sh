@@ -63,9 +63,6 @@ function blob_fixup() {
         system_ext/lib64/libwfdnative.so)
             "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
             ;;
-        vendor/bin/hw/dolbycodec2)
-            sed -i 's/libavservices_minijail_vendor.so/libavservices_minijail.so\x00\x00\x00\x00\x00\x00\x00/g' "${2}"
-            ;;
         vendor/etc/camera/pureShot_parameter.xml)
             sed -i 's/=\([0-9]\+\)>/="\1">/g' "${2}"
             ;;
