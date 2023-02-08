@@ -146,9 +146,8 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.4-impl \
-    android.hardware.camera.provider@2.4-service_64
-    
+    android.hardware.camera.provider@2.5-service_64
+
 $(call soong_config_set,libcameraservice,ext_lib,libcameraservice_extension.xiaomi_sm8350)
 
 PRODUCT_COPY_FILES += \
