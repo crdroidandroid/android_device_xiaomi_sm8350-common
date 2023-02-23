@@ -86,6 +86,10 @@
          name. It is STRONGLY RECOMMENDED to be set to false -->
     <bool translatable="false" name="config_wifiAllowInsecureEnterpriseConfigurationsForSettingsAndSUW">true</bool>
 
+    <!-- Indicates that non-persistent MAC randomization is allowed on open networks that do not
+     use captive portals -->
+    <bool translatable="false" name="config_wifiAllowNonPersistentMacRandomizationOnOpenSsids">true</bool>
+
     <!-- Integer indicating maximum hardware supported client number of soft ap -->
     <integer translatable="false" name="config_wifiHardwareSoftapMaxClientCount">32</integer>
 
