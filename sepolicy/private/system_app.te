@@ -1,1 +1,4 @@
 hal_client_domain(system_app, hal_mlipay)
+
+# Allow settings to query qemu.hw.mainkeys
+get_prop(system_app, qemu_hw_prop)
