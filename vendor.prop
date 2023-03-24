@@ -151,6 +151,7 @@ ro.bluetooth.a2dp_offload.supported=true
 
 # Camera
 camera.disable_zsl_mode=true
+ro.hardware.camera=xiaomi
 
 # Crypto
 ro.crypto.dm_default_key.options_format.version=2
