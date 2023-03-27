@@ -1,0 +1,4 @@
+# Aware
+get_prop(system_app, vendor_aware_available_prop);
+
+allow system_app proc_pagetypeinfo:file r_file_perms;

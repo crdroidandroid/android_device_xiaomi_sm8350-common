@@ -11,3 +11,6 @@ ro.hardware.fp.udfps    u:object_r:vendor_fp_prop:s0
 # Mlipay
 persist.vendor.sys.pay.                 u:object_r:vendor_mlipay_prop:s0
 persist.vendor.sys.provision.status     u:object_r:vendor_mlipay_prop:s0
+
+# Aware
+ro.vendor.aware_available          u:object_r:vendor_aware_available_prop:s0
