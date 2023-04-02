@@ -43,6 +43,10 @@ if [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
     # The standard device blobs
     write_makefiles "${MY_DIR}/../${DEVICE}/proprietary-files.txt" true
 
+if [ -s "${MY_DIR}/../${DEVICE}/proprietary-files-recovery.txt" ]; then
+    write_makefiles "${MY_DIR}/../${DEVICE}/proprietary-files-recovery.txt" true
+fi
+
     # Finish
     write_footers
 fi
