@@ -8,6 +8,9 @@ persist.sys.camlog.system.af                     u:object_r:vendor_camera_prop:s
 MACE_CPP_MIN_VLOG_LEVEL                     u:object_r:vendor_camera_prop:s0
 vendor.camera.skip_unconfigure.packagelist       u:object_r:vendor_persist_camera_prop:s0
 
+# Graphics
+ro.vendor.gfx.32bit.target          u:object_r:graphics_config_prop:s0
+
 # Hardware
 ro.hardware.chipname    u:object_r:build_prop:s0
 ro.hardware.alter    u:object_r:build_prop:s0
