@@ -1,3 +1,17 @@
+# Allow system app to access HALs 
+binder_call(system_app, hal_fingerprint_default)
+binder_call(system_app, hal_audio_default)
+binder_call(system_app, hal_camera_default)
+binder_call(system_app, hal_contexthub_default)
+binder_call(system_app, hal_gnss_default)
+binder_call(system_app, hal_power_default)
+binder_call(system_app, hal_vibrator_default)
+binder_call(system_app, hal_wifi_supplicant_default)
+
+# Allow system app to find services 
+dontaudit system_app system_suspend_control_service:service_manager find;
+dontaudit system_app system_suspend_control_internal_service:service_manager find;
+
 # Aware
 get_prop(system_app, vendor_aware_available_prop)
 
