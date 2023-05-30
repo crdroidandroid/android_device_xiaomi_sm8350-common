@@ -171,11 +171,11 @@ vendor.gatekeeper.disable_spu=true
 # Graphics
 debug.sf.enable_advanced_sf_phase_offset=1
 debug.sf.enable_transaction_tracing=false
-debug.sf.high_fps_early_gl_phase_offset_ns=-4000000
+debug.sf.high_fps_early_gl_phase_offset_ns=-2000000
 ro.surface_flinger.game_default_frame_rate_override=120
 debug.sf.high_fps_early_phase_offset_ns=-4000000
 debug.sf.high_fps_late_app_phase_offset_ns=1000000
-debug.sf.high_fps_late_sf_phase_offset_ns=-4000000
+debug.sf.high_fps_late_sf_phase_offset_ns=-2000000
 debug.sf.latch_unsignaled=1
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.set_idle_timer_ms=3000
