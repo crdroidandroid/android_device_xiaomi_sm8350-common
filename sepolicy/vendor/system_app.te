@@ -1,2 +1,5 @@
 # Aware
 get_prop(system_app, vendor_aware_available_prop)
+
+# Memory
+r_dir_file(system_app, proc_pagetypeinfo)
