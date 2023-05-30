@@ -229,7 +229,6 @@ ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.perf.scroll_opt=0
 
 # Radio
-keyguard.no_require_sim=true
 persist.radio.multisim.config=dsds
 persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
