@@ -3,3 +3,6 @@ binder_call(platform_app, vendor_hal_soter_qti)
 
 # Audio
 get_prop(platform_app, audio_config_prop)
+
+# Face Unlock
+get_prop(platform_app, vendor_camera_prop)
