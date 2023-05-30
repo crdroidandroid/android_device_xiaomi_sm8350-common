@@ -4,6 +4,12 @@ binder_call(platform_app, vendor_hal_soter_qti)
 # Audio
 get_prop(platform_app, audio_config_prop)
 
+# Leica Camera
+get_prop(platform_app, vendor_display_prop)
+get_prop(platform_app, vendor_camera_sensor_prop)
+allow platform_app vendor_hal_camerapostproc_xiaomi_hwservice:hwservice_manager find;
+binder_call(platform_app, vendor_hal_camerapostproc_xiaomi)
+
 # Face Unlock
 get_prop(platform_app, vendor_camera_prop)
 
