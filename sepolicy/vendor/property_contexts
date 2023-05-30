@@ -6,6 +6,7 @@ vendor.panel.display               u:object_r:vendor_camera_prop:s0
 persist.vendor.low.cutoff u:object_r:vendor_camera_prop:s0
 
 # Fingerprint
+ro.hardware.fp.fod    u:object_r:vendor_fp_prop:s0
 persist.vendor.sys.fp.    u:object_r:vendor_fp_prop:s0
 persist.vendor.sys.fp.info    u:object_r:vendor_fp_info_prop:s0
 persist.vendor.sys.fp.uid    u:object_r:vendor_fp_info_prop:s0
