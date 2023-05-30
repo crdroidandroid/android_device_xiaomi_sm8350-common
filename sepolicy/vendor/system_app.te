@@ -8,3 +8,7 @@ allow system_app vendor_sysfs_graphics:file { getattr open write };
 # HTSR
 allow system_app sysfs_htsr:file { read write open setattr getattr };
 allow system_app sysfs_htsr:dir { search open read };
+
+# Aware
+get_prop(system_app, vendor_aware_available_prop)
+
