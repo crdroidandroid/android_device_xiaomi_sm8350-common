@@ -3,3 +3,6 @@ vendor_restricted_prop(vendor_aware_available_prop);
 
 # IMEI
 vendor_internal_prop(vendor_deviceid_prop);
+
+# Property to set media performance class
+vendor_internal_prop(vendor_media_performance_class);
