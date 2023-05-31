@@ -24,6 +24,9 @@
 /vendor/lib(64)?/rfsa/adsp/libsnpe_htp_v66_skel\.so u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/rfsa/adsp/libsnpe_htp_v68_skel\.so u:object_r:same_process_hal_file:s0
 
+# FPS info
+/sys/class/drm/card0/sde-crtc-0/measured_fps                         u:object_r:vendor_sysfs_graphics:s0
+
 # IR
 /dev/ir_spi                                      u:object_r:ir_spi_device:s0
 

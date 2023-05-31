@@ -5,6 +5,9 @@ genfscon sysfs /class/qcom-battery u:object_r:vendor_sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/soc:extcon_usb1/extcon                   u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:qcom,battery_charger/extcon                   u:object_r:sysfs_extcon:s0
 
+# FPS info
+genfscon sysfs /class/drm/card0/sde-crtc-0/measured_fps    u:object_r:vendor_sysfs_graphics:s0
+
 # Fingerprint
 genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc u:object_r:vendor_sysfs_fingerprint:s0
 

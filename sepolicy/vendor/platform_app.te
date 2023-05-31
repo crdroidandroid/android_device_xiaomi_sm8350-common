@@ -10,6 +10,10 @@ get_prop(platform_app, vendor_camera_sensor_prop)
 allow platform_app vendor_hal_camerapostproc_xiaomi_hwservice:hwservice_manager find;
 binder_call(platform_app, vendor_hal_camerapostproc_xiaomi)
 
+# FPS info
+allow platform_app vendor_sysfs_graphics:dir search;
+allow platform_app vendor_sysfs_graphics:file r_file_perms;
+
 # Face Unlock
 get_prop(platform_app, vendor_camera_prop)
 

@@ -229,6 +229,10 @@ on property:sys.boot_completed=1
     chown media audio /sys/kernel/wdsp0/boot
     chown media audio /sys/kernel/wcd_cpe0/fw_name
 
+    # FPS info
+    chown system graphics /sys/class/drm/card0/sde-crtc-0/measured_fps
+    chmod 0666 /sys/class/drm/card0/sde-crtc-0/measured_fps
+
 service vendor.qrtr-ns /vendor/bin/qrtr-ns -f
     class core
     user vendor_qrtr
