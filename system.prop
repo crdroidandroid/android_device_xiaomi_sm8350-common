@@ -11,6 +11,12 @@ persist.vendor.cne.feature=1
 debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=1
 
+# Log
+persist.log.tag.CVP=S
+persist.log.tag.CamX=S
+persist.log.tag.SYNX-UMD=S
+persist.log.tag.CHIUSECASE=S
+
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
