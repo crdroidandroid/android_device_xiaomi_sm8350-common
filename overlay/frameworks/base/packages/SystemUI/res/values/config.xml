@@ -55,6 +55,10 @@
         <item>0</item>
     </integer-array>
 
+    <!-- Comma-separated list of packages to exclude from camera protection. In our case,
+    ignore the gaze detection and faceunlock package -->
+    <string translatable="false" name="config_cameraProtectionExcludedPackages">org.pixelexperience.faceunlock,com.crdroid.faceunlock</string>
+
     <!-- Preferred max refresh rate at keyguard, if supported by the display. -->
     <integer name="config_keyguardMaxRefreshRate">60</integer>
 </resources>
