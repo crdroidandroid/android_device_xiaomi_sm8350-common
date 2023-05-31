@@ -23,6 +23,9 @@ persist.dbg.wfc_avail_ovr=1
 # LMK
 ro.config.low_ram=false
 
+# Logs
+persist.log.tag.FastChargingPreferenceController=S
+
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
