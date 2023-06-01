@@ -3,3 +3,7 @@ persist.vendor.dpm.feature=11
 
 # MTE
 arm64.memtag.process.system_server=off
+
+# Telephony
+ro.telephony.sim_slots.count=2
+telephony.active_modems.max_count=2
