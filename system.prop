@@ -11,6 +11,9 @@ persist.vendor.cne.feature=1
 debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=1
 
+# FS-verity
+ro.apk_verity.mode=2
+
 # Log
 persist.log.tag.CVP=S
 persist.log.tag.CamX=S
