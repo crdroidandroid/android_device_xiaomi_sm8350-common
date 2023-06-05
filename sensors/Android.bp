@@ -1,7 +1,6 @@
 //
 // Copyright (C) 2020 The Android Open Source Project
 // Copyright (C) 2022 The LineageOS Project
-// Copyright (C) 2022 The PixelExperience Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -51,7 +50,7 @@ cc_binary {
 }
 
 cc_library_shared {
-    name: "sensors.xiaomi_sm8350",
+    name: "sensors.xiaomi.udfps",
     defaults: ["hidl_defaults"],
     srcs: [
         "Sensor.cpp",
@@ -75,7 +74,7 @@ cc_library_shared {
         "android.hardware.sensors@2.X-multihal",
     ],
     cflags: [
-        "-DLOG_TAG=\"sensors.xiaomi_sm8350\"",
+        "-DLOG_TAG=\"sensors.xiaomi.udfps\"",
     ],
     vendor: true,
 }
