@@ -63,6 +63,9 @@ function blob_fixup() {
         system_ext/lib64/libwfdnative.so)
             "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
             ;;
+        vendor/etc/msm_irqbalance.conf)
+            sed -i "s/IGNORED_IRQ=27,23,38$/&,115,332/" "${2}"
+            ;;
         vendor/etc/media_lahaina/video_system_specs.json \
         |vendor/etc/media_shima_v1/video_system_specs.json \
         |vendor/etc/media_yupik_v1/video_system_specs.json)

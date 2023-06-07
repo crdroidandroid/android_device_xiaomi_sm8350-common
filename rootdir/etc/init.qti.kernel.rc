@@ -78,7 +78,14 @@ on property:sys.boot_completed=1
 
     start kernel-post-boot
 
-service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance.conf
+service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqbalance.conf
     class core
     user root
     group root
+
+on property:vendor.post_boot.parsed=1
+    # IRQ Tuning
+    # IRQ 278: msm_drm
+    # IRQ 275: kgsl_3d0_irq
+    write /proc/irq/278/smp_affinity_list 2
+    write /proc/irq/275/smp_affinity_list 1
