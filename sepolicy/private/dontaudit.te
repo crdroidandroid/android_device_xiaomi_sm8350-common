@@ -5,3 +5,4 @@ dontaudit linkerconfig self:capability kill;
 dontaudit zygote self:capability kill;
 dontaudit kernel self:capability { dac_read_search sys_admin kill };
 dontaudit isolated_app content_capture_service:service_manager find;
+dontaudit system_server fuse:file rw_file_perms;
