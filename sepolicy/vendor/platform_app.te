@@ -29,3 +29,6 @@ allowxperm platform_app apk_data_file:file ioctl {
   FS_IOC_SETFLAGS
   FS_IOC_GETFLAGS
 };
+
+allow platform_app hal_misys_hwservice:hwservice_manager find;
+binder_call(platform_app, hal_misys_default)

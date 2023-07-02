@@ -34,6 +34,12 @@
 # Mlipay
 /(vendor|system/vendor)/bin/mlipayd@1.1          u:object_r:hal_mlipay_default_exec:s0
 
+# MiSys
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.misys@1\.0-service                                             u:object_r:hal_misys_default_exec:s0
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.misys@2\.0-service                                             u:object_r:hal_misys_default_exec:s0
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.misys@3\.0-service                                             u:object_r:hal_misys_default_exec:s0
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.misys@4\.0-service                                             u:object_r:hal_misys_default_exec:s0
+
 # NFC
 /vendor/bin/hw/android\.hardware\.nfc-service\.nxp                 u:object_r:hal_nfc_default_exec:s0
 
