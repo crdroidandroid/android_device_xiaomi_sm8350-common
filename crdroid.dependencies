@@ -1,0 +1,23 @@
+[
+  {
+    "repository": "crdroidandroid/android-prebuilts-clang-host-linux-x-86-prelude-clang",
+    "target_path": "prebuilts/clang/host/linux-x86/clang-prelude",
+    "remote": "crdroid-gitlab"
+  },
+  {
+    "repository": "crdroidandroid/android_hardware_xiaomi",
+    "target_path": "hardware/xiaomi",
+    "branch": "13.0-MI8350"
+  },
+  {
+    "repository": "crdroidandroid/proprietary_vendor_xiaomi_sm8350-common",
+    "target_path": "vendor/xiaomi/sm8350-common",
+    "branch": "thirteen",
+    "remote": "crdroid-gitlab"
+  },
+  {
+    "repository": "crdroidandroid/android_vendor_firmware-xiaomi",
+    "target_path": "vendor/firmware",
+    "remote": "crdroid-gitlab"
+  }
+]
