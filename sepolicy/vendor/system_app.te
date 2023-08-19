@@ -4,5 +4,17 @@ get_prop(system_app, vendor_aware_available_prop)
 # Memory
 r_dir_file(system_app, proc_pagetypeinfo)
 
+# Incremental
+get_prop(system_app, incremental_prop)
+
+# allow apps like settings to check the file signature of an apk installed on
+# the Incremental File System, fill missing blocks and get the app status and loading progress
+allowxperm system_app apk_data_file:file ioctl {
+  INCFS_IOCTL_READ_SIGNATURE
+  INCFS_IOCTL_FILL_BLOCKS
+  INCFS_IOCTL_GET_BLOCK_COUNT
+  INCFS_IOCTL_GET_FILLED_BLOCKS
+};
+
 # Zram
 r_dir_file(system_app, sysfs_zram)

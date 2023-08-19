@@ -7,5 +7,36 @@ get_prop(platform_app, audio_config_prop)
 # Face Unlock
 get_prop(platform_app, vendor_camera_prop)
 
+# Incremental
+get_prop(platform_app, incremental_prop)
+
+# To create files, get permission to fill blocks, and configure Incremental File System
+allow platform_app incremental_control_file:file { ioctl r_file_perms };
+allowxperm platform_app incremental_control_file:file ioctl {
+  INCFS_IOCTL_CREATE_FILE
+  INCFS_IOCTL_CREATE_MAPPED_FILE
+  INCFS_IOCTL_PERMIT_FILL
+  INCFS_IOCTL_GET_READ_TIMEOUTS
+  INCFS_IOCTL_SET_READ_TIMEOUTS
+  INCFS_IOCTL_GET_LAST_READ_ERROR
+};
+
+# To get signature of an APK installed on Incremental File System, and fill in data
+# blocks and get the filesystem state
+allowxperm platform_app apk_data_file:file ioctl {
+  INCFS_IOCTL_READ_SIGNATURE
+  INCFS_IOCTL_FILL_BLOCKS
+  INCFS_IOCTL_GET_FILLED_BLOCKS
+  INCFS_IOCTL_GET_BLOCK_COUNT
+  F2FS_IOC_GET_FEATURES
+  F2FS_IOC_GET_COMPRESS_BLOCKS
+  F2FS_IOC_COMPRESS_FILE
+  F2FS_IOC_DECOMPRESS_FILE
+  F2FS_IOC_RELEASE_COMPRESS_BLOCKS
+  F2FS_IOC_RESERVE_COMPRESS_BLOCKS
+  FS_IOC_SETFLAGS
+  FS_IOC_GETFLAGS
+};
+
 # Zram
 r_dir_file(platform_app, sysfs_zram)
