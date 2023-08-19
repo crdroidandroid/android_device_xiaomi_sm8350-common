@@ -397,6 +397,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/power/config/lahaina/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
+# Prebuilt packages
+PRODUCT_PACKAGES += \
+    MlkitBarcodeUI \
+    VisionBarcode \
+    QRCameraOverlay
+
 # QTI
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor
