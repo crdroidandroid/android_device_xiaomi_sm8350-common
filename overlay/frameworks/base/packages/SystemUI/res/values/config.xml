@@ -58,6 +58,9 @@
     <!-- Whether usage of the proximity sensor during doze is supported -->
     <bool name="doze_proximity_sensor_supported">false</bool>
 
+    <!-- Doze: check proximity sensor before pulsing? -->
+    <bool name="doze_proximity_check_before_pulse">false</bool>
+
     <!-- Comma-separated list of packages to exclude from camera protection. In our case,
     ignore the gaze detection and faceunlock package -->
     <string translatable="false" name="config_cameraProtectionExcludedPackages">org.pixelexperience.faceunlock,com.crdroid.faceunlock</string>
