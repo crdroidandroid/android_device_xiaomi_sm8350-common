@@ -78,6 +78,9 @@ function blob_fixup() {
         vendor/lib64/android.hardware.secure_element@1.0-impl.so)
             "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
             ;;
+         vendor/etc/init/vendor.qti.rmt_storage.rc)
+            sed -i "/shutdown critical/ i\  group system wakelock" "${2}"
+            ;;
     esac
 }
 
