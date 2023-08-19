@@ -4,3 +4,4 @@ dontaudit odrefresh self:capability kill;
 dontaudit linkerconfig self:capability kill;
 dontaudit zygote self:capability kill;
 dontaudit kernel self:capability { dac_read_search sys_admin kill };
+dontaudit isolated_app content_capture_service:service_manager find;
