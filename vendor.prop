@@ -182,6 +182,7 @@ debug.sf.high_fps_late_app_phase_offset_ns=1000000
 debug.sf.high_fps_late_sf_phase_offset_ns=-2000000
 debug.sf.hw=0
 debug.sf.auto_latch_unsignaled=false
+debug.sf.treat_170m_as_sRGB=1
 debug.sf.set_idle_timer_ms=3000
 persist.sys.sf.color_mode=9
 persist.sys.sf.color_saturation=1.0
