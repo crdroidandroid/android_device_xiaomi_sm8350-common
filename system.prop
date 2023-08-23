@@ -25,6 +25,7 @@ persist.log.tag.CHIUSECASE=S
 
 # LMK properties
 ro.lmk.kill_heaviest_task=true
+ro.lmk.kill_timeout_ms=50
 
 # IMS
 persist.dbg.volte_avail_ovr=1
