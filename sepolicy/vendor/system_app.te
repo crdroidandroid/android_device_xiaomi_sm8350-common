@@ -15,6 +15,9 @@ dontaudit system_app system_suspend_control_internal_service:service_manager fin
 # Aware
 get_prop(system_app, vendor_aware_available_prop)
 
+# Battery Health
+r_dir_file(system_app, sysfs_battery_supply)
+
 # Memory
 r_dir_file(system_app, proc_pagetypeinfo)
 
