@@ -1,2 +1,0 @@
-# Set tethering properties
-set_prop(system_server, device_config_tethering_prop)
