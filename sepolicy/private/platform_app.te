@@ -1,1 +1,4 @@
 allow platform_app config_gz:file r_file_perms;
+
+# Allow bypassing the FUSE layer
+r_dir_file(platform_app, mnt_pass_through_file)
