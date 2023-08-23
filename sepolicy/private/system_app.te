@@ -8,4 +8,7 @@ dontaudit system_app tracingproxy_service:service_manager find;
 # Allow bypassing the FUSE layer
 r_dir_file(system_app, mnt_pass_through_file)
 
+# Allow externalstorage access
+allow system_app mnt_pass_through_file:dir { create_dir_perms mounton };
+
 hal_client_domain(system_app, hal_mlipay)
