@@ -23,6 +23,9 @@ persist.log.tag.CamX=S
 persist.log.tag.SYNX-UMD=S
 persist.log.tag.CHIUSECASE=S
 
+# LMK properties
+ro.lmk.kill_heaviest_task=true
+
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
