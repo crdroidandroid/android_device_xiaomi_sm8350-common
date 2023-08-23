@@ -6,7 +6,6 @@ persist.al.cfr.loglevel                              u:object_r:vendor_camera_pr
 persist.wa.log.level                             u:object_r:vendor_camera_prop:s0
 persist.sys.camlog.system.af                     u:object_r:vendor_camera_prop:s0
 MACE_CPP_MIN_VLOG_LEVEL                     u:object_r:vendor_camera_prop:s0
-vendor.camera.skip_unconfigure.packagelist       u:object_r:vendor_persist_camera_prop:s0
 
 # Graphics
 ro.vendor.gfx.32bit.target          u:object_r:graphics_config_prop:s0
