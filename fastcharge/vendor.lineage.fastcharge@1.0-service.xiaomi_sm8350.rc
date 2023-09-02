@@ -2,3 +2,9 @@ service vendor.fastcharge-hal-1-0 /vendor/bin/hw/vendor.lineage.fastcharge@1.0-s
     class hal
     user system
     group system
+
+on property:persist.vendor.sec.fastchg_enabled=true
+    start batterysecret
+
+on property:persist.vendor.sec.fastchg_enabled=false
+    stop batterysecret
