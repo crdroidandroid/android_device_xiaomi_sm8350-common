@@ -100,7 +100,7 @@ function configure_memory_parameters() {
 	ProductName=`getprop ro.product.name`
 
 	configure_zram_parameters
-	echo 100 > /proc/sys/vm/swappiness
+	echo 60 > /proc/sys/vm/swappiness
 
         # Disable wsf  beacause we are using efk.
         # wsf Range : 1..1000. So set to bare minimum value 1.
