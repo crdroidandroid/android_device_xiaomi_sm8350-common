@@ -22,6 +22,14 @@
         <fqname>@1.0::IMiCameraPerfService/default</fqname>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.xiaomi.hardware.cameraperf</name>
+        <version>1.0</version>
+        <interface>
+            <name>IMiCameraPerfService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.xiaomi.hardware.campostproc</name>
         <version>1.0</version>
         <interface>
