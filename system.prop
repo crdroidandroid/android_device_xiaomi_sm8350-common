@@ -5,7 +5,7 @@ vendor.bluetooth.soc=hastings
 persist.vendor.cne.feature=1
 
 # Disable MTE Async for system server
-arm64.memtag.process.system_server=off
+persist.arm64.memtag.system_server=off
 
 # Graphics
 debug.sf.disable_backpressure=1
