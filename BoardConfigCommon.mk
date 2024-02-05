@@ -71,7 +71,14 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
 
 DEVICE_MANIFEST_FILE += \
     $(COMMON_PATH)/hidl/manifest_lahaina.xml \
-    $(COMMON_PATH)/hidl/manifest_xiaomi.xml
+    $(COMMON_PATH)/hidl/manifest_xiaomi.xml \
+    $(if $(TARGET_NFC_SUPPORTED_SKUS),$(COMMON_PATH)/hidl/manifest_no_nfc.xml,)
+
+ifneq ($(TARGET_NFC_SUPPORTED_SKUS),)
+ODM_MANIFEST_SKUS += $(TARGET_NFC_SUPPORTED_SKUS)
+$(foreach nfc_sku, $(call to-upper, $(TARGET_NFC_SUPPORTED_SKUS)), \
+    $(eval ODM_MANIFEST_$(nfc_sku)_FILES += $(COMMON_PATH)/hidl/manifest_nfc.xml))
+endif
 
 ifeq ($(TARGET_HAS_UDFPS),true)
 DEVICE_MANIFEST_FILE += \
