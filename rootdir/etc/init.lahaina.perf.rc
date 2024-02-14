@@ -52,11 +52,8 @@ on property:vendor.post_boot.parsed=1
     # Enable suspend to RAM
     write /sys/power/mem_sleep "deep"
 
-    # IRQ Tuning
-    # IRQ 70: msm_drm0
-    # IRQ 222: kgsl_3d0_irq
-    write /proc/irq/70/smp_affinity_list 2
-    write /proc/irq/222/smp_affinity_list 1
+    # Dynamically set IRQ affinity for KGSL and DRM
+    exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.lahaina.perf.sh
 
 on property:persist.sys.device_provisioned=1
     setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,6
