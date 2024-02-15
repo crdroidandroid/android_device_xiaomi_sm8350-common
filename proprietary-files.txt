@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from haydn V13.0.3.0.SKKMIXM
+# All unpinned blobs are extracted from miui_star-user 13 RKQ1.211001.001 V14.0.23.9.18.DEV release-keys
 
 # ADSP
 vendor/bin/adsprpcd
@@ -11,6 +11,8 @@ system_ext/etc/permissions/audiosphere.xml
 system_ext/framework/audiosphere.jar
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libshoebox.so
+vendor/lib/soundfx/libmisoundfx.so
+vendor/lib64/soundfx/libmisoundfx.so
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
@@ -645,6 +647,15 @@ vendor/lib64/android.hardware.secure_element@1.0-impl.so
 vendor/lib64/jcos_nq_client.so
 vendor/lib64/ls_nq_client.so
 vendor/lib64/se_nq_extn_client.so
+
+# Sensor-calibrate
+vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
+vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
+vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
+vendor/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
+vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so
+vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
 # Sensors (citsensor)
 vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service
