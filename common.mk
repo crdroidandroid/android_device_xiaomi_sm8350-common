@@ -148,6 +148,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.composer-service.xml
 
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@3.0 \
     libqdMetaData.system \
     memtrack.default
 
