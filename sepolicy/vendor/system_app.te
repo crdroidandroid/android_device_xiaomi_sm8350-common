@@ -3,6 +3,9 @@ get_prop(system_app, vendor_aware_available_prop);
 
 allow system_app proc_pagetypeinfo:file r_file_perms;
 
+# Parts
+allow system_app sysfs_thermal:file write;
+
 # Incremental
 get_prop(system_app, incremental_prop)
 # allow apps like settings to check the file signature of an apk installed on
