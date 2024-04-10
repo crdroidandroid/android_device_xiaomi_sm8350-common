@@ -220,6 +220,10 @@ vendor.display.use_layer_ext=0
 vendor.display.use_smooth_motion=0
 vendor.gralloc.disable_ubwc=0
 
+# HWUI
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
+
 # Media
 debug.stagefright.c2inputsurface=-1
 media.stagefright.thumbnail.prefer_hw_codecs=true
