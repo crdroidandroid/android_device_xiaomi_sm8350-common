@@ -304,6 +304,14 @@
         ""
       ],
       "Type": "Property"
+    },
+    {
+      "Name": "DoubleTapToWake",
+      "Path": "/proc/touchpanel/double_tap_enable",
+      "Values": [
+        "1",
+        "0"
+      ]
     }
   ],
   "Actions": [
@@ -553,5 +561,11 @@
       "Duration": 60,
       "Value": "1"
     },
+    {
+      "PowerHint": "DOUBLE_TAP_TO_WAKE",
+      "Node": "DoubleTapToWake",
+      "Duration": 0,
+      "Value": "1"
+    }
   ]
 }
