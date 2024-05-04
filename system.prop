@@ -1,6 +1,9 @@
 # Bluetooth
 vendor.bluetooth.soc=hastings
 
+# Camera
+ro.product.mod_device=renoir_global
+
 # CNE
 persist.vendor.cne.feature=1
 
