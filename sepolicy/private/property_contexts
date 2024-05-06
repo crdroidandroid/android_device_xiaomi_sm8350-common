@@ -1,6 +1,13 @@
 # Camera
 ro.camera.req.fmq.                 u:object_r:exported_default_prop:s0
 ro.camera.res.fmq.                 u:object_r:exported_default_prop:s0
+persist.al.ldc.log                          u:object_r:vendor_camera_prop:s0
+persist.al.cfr.loglevel                     u:object_r:vendor_camera_prop:s0
+persist.wa.log.level                        u:object_r:vendor_camera_prop:s0
+persist.wa.dump                             u:object_r:vendor_camera_prop:s0
+persist.wa.timelog                          u:object_r:vendor_camera_prop:s0
+persist.sys.camlog.system.af                u:object_r:vendor_camera_prop:s0
+MACE_CPP_MIN_VLOG_LEVEL                     u:object_r:vendor_camera_prop:s0
 
 # Global
 ro.product.marketname    u:object_r:build_prop:s0
