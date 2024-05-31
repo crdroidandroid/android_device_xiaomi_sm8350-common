@@ -8,6 +8,7 @@ persist.vendor.aiie_capture_log.debug   u:object_r:vendor_camera_prop:s0
 ro.boot.camera.				u:object_r:vendor_camera_prop:s0
 ro.boot.camera.config    u:object_r:vendor_camera_sensor_prop:s0
 persist.vendor.low.cutoff u:object_r:vendor_camera_prop:s0
+ro.vendor.audio.us.proximity            u:object_r:vendor_camera_prop:s0
 
 # Fingerprint
 persist.vendor.sys.fp.    u:object_r:vendor_fp_prop:s0
