@@ -169,6 +169,9 @@ persist.vendor.dpmhalservice.enable=1
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# Enable DeviceAsWebcam support
+ro.usb.uvc.enabled=true
+
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
