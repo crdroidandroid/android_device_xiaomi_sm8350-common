@@ -13,6 +13,24 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
+# Log
+persist.log.tag.ACDB-LOADER=S
+persist.log.tag.RippleDrawable=S
+persist.log.tag.BackupHelper=S
+persist.log.tag.ctbc=S
+persist.log.tag.BitmapFactory=S
+persist.log.tag.minksocket=S
+persist.log.tag.gdog=S
+persist.log.tag.SQLiteDatabase=S
+persist.log.tag.ultrasound_extn=S
+persist.log.tag.msm8974_platform=S
+persist.log.tag.NgaGrpcClient=S
+persist.log.tag.QC-time-services=S
+persist.log.tag.CVP=S
+persist.log.tag.CamX=S
+persist.log.tag.SYNX-UMD=S
+persist.log.tag.CHIUSECASE=S
+
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
