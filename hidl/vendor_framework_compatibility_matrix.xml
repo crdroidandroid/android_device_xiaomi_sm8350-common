@@ -38,6 +38,24 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
            <instance>panoStitching</instance>
        </interface>
    </hal>
+   <hal format="hidl">
+        <name>vendor.lineage.fastcharge</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IFastCharge</name>
+            <instance>default</instance>
+        </interface>
+   </hal>
+   <hal format="hidl" optional="false">
+        <name>vendor.lineage.fastcharge</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IRestrictedCurrent</name>
+            <instance>default</instance>
+        </interface>
+   </hal>
    <hal format="hidl" optional="true">
        <name>vendor.qti.hardware.scve.objecttracker</name>
        <version>1.0</version>
