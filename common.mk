@@ -330,6 +330,10 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     DeviceAsWebcamOverlayCommon
 
+# Parts
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
 # Partitions
 PRODUCT_PACKAGES += \
     vendor_bt_firmware_mountpoint \
