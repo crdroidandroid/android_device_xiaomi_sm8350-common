@@ -1,3 +1,19 @@
+type vendor_sysfs_double_tap, sysfs_type, fs_type;
+type vendor_sysfs_sde_crtc, fs_type, sysfs_type;
 type vendor_touchfeature_device, dev_type;
 
+allow hal_power_default cgroup:file r_file_perms;
+allow hal_power_default vendor_sysfs_double_tap:file rw_file_perms;
 allow hal_power_default vendor_touchfeature_device:chr_file rw_file_perms;
+allow hal_power_default vendor_latency_device:chr_file rw_file_perms;
+
+rw_dir_file(hal_power_default, proc)
+rw_dir_file(hal_power_default, proc_sched)
+rw_dir_file(hal_power_default, sysfs_devices_system_cpu)
+rw_dir_file(hal_power_default, vendor_sysfs_devfreq)
+rw_dir_file(hal_power_default, vendor_sysfs_graphics)
+rw_dir_file(hal_power_default, vendor_sysfs_kgsl)
+rw_dir_file(hal_power_default, vendor_sysfs_scsi_host)
+rw_dir_file(hal_power_default, vendor_sysfs_sde_crtc)
+
+set_prop(hal_power_default, vendor_power_prop)
