@@ -4,8 +4,9 @@
     "target_path": "kernel/xiaomi/sm8350"
   },
   {
-    "repository": "crdroidandroid/android_hardware_xiaomi",
-    "target_path": "hardware/xiaomi"
+    "repository": "LineageOS/android_hardware_xiaomi",
+    "target_path": "hardware/xiaomi",
+    "branch": "lineage-21"
   },
   {
     "repository": "crdroidandroid/proprietary_vendor_xiaomi_sm8350-common",
