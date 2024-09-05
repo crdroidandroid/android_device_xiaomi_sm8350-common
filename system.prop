@@ -13,6 +13,9 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
+# Logs
+persist.log.tag.minksocket=S
+
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
