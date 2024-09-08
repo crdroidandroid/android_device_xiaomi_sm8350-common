@@ -284,16 +284,6 @@ PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
 # Media
-PRODUCT_PACKAGES += \
-    libmm-omxcore \
-    libOmxAacEnc \
-    libOmxAmrEnc \
-    libOmxCore \
-    libOmxEvrcEnc \
-    libOmxG711Enc \
-    libOmxQcelp13Enc \
-    libstagefrighthw
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/init.qti.media.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.media.sh \
     $(LOCAL_PATH)/media/init.qti.media.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.media.rc

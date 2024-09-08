@@ -91,12 +91,6 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             grep -q libcrypto_shim.so "${2}" || "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
             ;;
-        vendor/lib/libOmxVideoDSMode.so)
-            [ "$2" = "" ] && return 0
-            "${PATCHELF}" --remove-needed "libwfdcommonutils_proprietary.so" "${2}"
-            "${PATCHELF}" --remove-needed "libwfdmmservice_proprietary.so" "${2}"
-            "${PATCHELF}" --remove-needed "libwfdutils_proprietary.so" "${2}"
-            ;;
         *)
             return 1
             ;;
