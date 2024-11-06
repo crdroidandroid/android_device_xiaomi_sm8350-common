@@ -460,13 +460,15 @@ vendor/lib/hw/vendor.xiaomi.hardware.misys@1.0-impl.so
 vendor/lib/hw/vendor.xiaomi.hardware.misys@2.0-impl.so
 vendor/lib/hw/vendor.xiaomi.hardware.misys@3.0-impl.so
 vendor/lib/hw/vendor.xiaomi.hardware.misys@4.0-impl.so
+vendor/lib/libcheckpid.so
+vendor/lib/liblogwrap_vendor.so
 vendor/lib/libmicuttlefish_fs.so
 vendor/lib/libmicuttlefish_utils.so
 vendor/lib/libmivsock_utils.so
-vendor/lib/vendor.xiaomi.hardware.misys@1.0.so
-vendor/lib/vendor.xiaomi.hardware.misys@2.0.so
-vendor/lib/vendor.xiaomi.hardware.misys@3.0.so
-vendor/lib/vendor.xiaomi.hardware.misys@4.0.so
+vendor/lib/vendor.xiaomi.hardware.misys@1.0.so;MODULE_SUFFIX=-vendor
+vendor/lib/vendor.xiaomi.hardware.misys@2.0.so;MODULE_SUFFIX=-vendor
+vendor/lib/vendor.xiaomi.hardware.misys@3.0.so;MODULE_SUFFIX=-vendor
+vendor/lib/vendor.xiaomi.hardware.misys@4.0.so;MODULE_SUFFIX=-vendor
 vendor/lib64/hw/vendor.xiaomi.hardware.misys@1.0-impl.so
 vendor/lib64/hw/vendor.xiaomi.hardware.misys@2.0-impl.so
 vendor/lib64/hw/vendor.xiaomi.hardware.misys@3.0-impl.so
@@ -476,10 +478,10 @@ vendor/lib64/liblogwrap_vendor.so
 vendor/lib64/libmicuttlefish_fs.so
 vendor/lib64/libmicuttlefish_utils.so
 vendor/lib64/libmivsock_utils.so
-vendor/lib64/vendor.xiaomi.hardware.misys@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.misys@2.0.so
-vendor/lib64/vendor.xiaomi.hardware.misys@3.0.so
-vendor/lib64/vendor.xiaomi.hardware.misys@4.0.so
+vendor/lib64/vendor.xiaomi.hardware.misys@1.0.so;MODULE_SUFFIX=-vendor
+vendor/lib64/vendor.xiaomi.hardware.misys@2.0.so;MODULE_SUFFIX=-vendor
+vendor/lib64/vendor.xiaomi.hardware.misys@3.0.so;MODULE_SUFFIX=-vendor
+vendor/lib64/vendor.xiaomi.hardware.misys@4.0.so;MODULE_SUFFIX=-vendor
 
 # Neural networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti

@@ -43,6 +43,10 @@ function lib_to_package_fixup_vendor_variants() {
             libmmosal | \
             vendor.qti.diaghal@1.0 | \
             vendor.qti.hardware.wifidisplaysession@1.0 | \
+            vendor.xiaomi.hardware.misys@1.0 | \
+            vendor.xiaomi.hardware.misys@2.0 | \
+            vendor.xiaomi.hardware.misys@3.0 | \
+            vendor.xiaomi.hardware.misys@4.0 | \
             vendor.qti.imsrtpservice@3.0)
             echo "$1-vendor"
             ;;
