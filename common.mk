@@ -118,8 +118,6 @@ PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
 # Camera
-$(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
-
 PRODUCT_PACKAGES += \
     android.hidl.memory@1.0.vendor \
     android.hidl.memory.block@1.0.vendor \
