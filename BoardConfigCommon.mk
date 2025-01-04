@@ -138,9 +138,6 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 # Platform
 TARGET_BOARD_PLATFORM := lahaina
 
-# Power
-TARGET_POWERHAL_MODE_EXT := $(COMMON_PATH)/power/power-mode.cpp
-
 # PowerShare
 TARGET_POWERSHARE_PATH := /sys/class/qcom-battery/reverse_chg_mode
 
