@@ -4,3 +4,7 @@ allow system_app sysfs_thermal:file rw_file_perms;
 # DC Dimming and HBM
 allow system_app vendor_sysfs_graphics:dir search;
 allow system_app vendor_sysfs_graphics:file { getattr open write };
+
+# HTSR
+allow system_app sysfs_htsr:file { read write open setattr getattr };
+allow system_app sysfs_htsr:dir { search open read };
