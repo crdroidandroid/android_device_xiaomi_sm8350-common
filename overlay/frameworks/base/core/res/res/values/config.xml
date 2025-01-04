@@ -298,4 +298,8 @@
 
     <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
     <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/qcom-battery/fastchg_mode</string>
+    
+    <!-- Control whether the pickup gesture is enabled by default. This value will be used
+          during initialization when the setting is still null. -->
+    <bool name="config_dozePickupGestureEnabled">false</bool>
 </resources>
