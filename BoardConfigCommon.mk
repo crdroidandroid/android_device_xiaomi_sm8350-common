@@ -138,6 +138,9 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 # Platform
 TARGET_BOARD_PLATFORM := lahaina
 
+# Power
+TARGET_TAP_TO_WAKE_NODE := /sys/devices/virtual/touch/tp_dev/double_tap
+
 # PowerShare
 TARGET_POWERSHARE_PATH := /sys/class/qcom-battery/reverse_chg_mode
 
