@@ -16,3 +16,7 @@ allowxperm system_app apk_data_file:file ioctl {
   INCFS_IOCTL_GET_BLOCK_COUNT
   INCFS_IOCTL_GET_FILLED_BLOCKS
 };
+
+# DC Dimming and HBM
+allow system_app vendor_sysfs_graphics:dir search;
+allow system_app vendor_sysfs_graphics:file { getattr open write };
