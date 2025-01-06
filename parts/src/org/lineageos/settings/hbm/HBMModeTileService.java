@@ -17,7 +17,6 @@
 */
 
 package org.lineageos.settings.hbm;
-
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;
@@ -28,12 +27,10 @@ import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
 import androidx.preference.PreferenceManager;
 import android.provider.Settings;
-
 import org.lineageos.settings.utils.FileUtils;
 import org.lineageos.settings.display.*;
 
 public class HBMModeTileService extends TileService {
-
     private static final String HBM = "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm_enabled";
     private static final String HBM_KEY = "hbm";
     private static final String BACKLIGHT = "/sys/class/backlight/panel0-backlight/brightness";
@@ -80,6 +77,7 @@ public class HBMModeTileService extends TileService {
     public void onStopListening() {
         super.onStopListening();
     }
+
     @Override
     public void onClick() {
         super.onClick();
@@ -88,12 +86,24 @@ public class HBMModeTileService extends TileService {
         if (dcDimmingEnabled) {
             return;
         }
+
         final boolean enabled = !(sharedPrefs.getBoolean(HBM_KEY, false));
-        FileUtils.writeLine(HBM, enabled ? "1" : "0");
         if (enabled) {
+            // Save current brightness level
+            int currentBrightness = Settings.System.getInt(getContentResolver(), Settings.System.SCREEN_BRIGHTNESS, 128);
+            sharedPrefs.edit().putInt("last_brightness", currentBrightness).apply();
+
+            FileUtils.writeLine(HBM, "1");
             FileUtils.writeLine(BACKLIGHT, "2047");
             Settings.System.putInt(getContentResolver(), Settings.System.SCREEN_BRIGHTNESS, 255);
+        } else {
+            FileUtils.writeLine(HBM, "0");
+
+            // Restore last brightness level
+            int lastBrightness = sharedPrefs.getInt("last_brightness", 128);
+            Settings.System.putInt(getContentResolver(), Settings.System.SCREEN_BRIGHTNESS, lastBrightness);
         }
+
         sharedPrefs.edit().putBoolean(HBM_KEY, enabled).commit();
         updateUI(enabled);
     }
