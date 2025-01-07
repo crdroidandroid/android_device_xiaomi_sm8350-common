@@ -140,9 +140,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.composer-service.xml \
     vendor.qti.hardware.memtrack-service
 
-PRODUCT_PACKAGES += \
-    libqdMetaData.system
-
 PRODUCT_COPY_FILES += \
     hardware/qcom-caf/sm8350/display/config/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml
 	
