@@ -1,6 +1,3 @@
-# Battery
-genfscon sysfs /class/qcom-battery u:object_r:vendor_sysfs_battery_supply:s0
-
 # Display
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary u:object_r:vendor_sysfs_graphics:s0
 
