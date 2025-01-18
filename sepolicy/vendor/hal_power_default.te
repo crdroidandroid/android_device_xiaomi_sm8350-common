@@ -1,8 +1,6 @@
-type vendor_sysfs_double_tap, sysfs_type, fs_type;
 type vendor_touchfeature_device, dev_type;
 type vendor_sysfs_sde_crtc, fs_type, sysfs_type;
 
-allow hal_power_default vendor_sysfs_double_tap:file rw_file_perms;
 allow hal_power_default vendor_touchfeature_device:chr_file rw_file_perms;
 
 # Allow Power HAL to read and write to sde-crtc-*
