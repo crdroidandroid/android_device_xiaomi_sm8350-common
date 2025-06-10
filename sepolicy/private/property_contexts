@@ -9,9 +9,13 @@ ro.camera.res.fmq.             u:object_r:exported_default_prop:s0
 ro.vendor.camera.res.fmq.size       u:object_r:vendor_camera_prop:s0
 
 # Fs-verity
-pm.dexopt.dm.require_fsverity   		    u:object_r:exported_pm_prop:s0
-pm.dexopt.dm.require_manifest   		    u:object_r:exported_pm_prop:s0
+pm.dexopt.dm.require_fsverity		    u:object_r:exported_pm_prop:s0
+pm.dexopt.dm.require_manifest		    u:object_r:exported_pm_prop:s0
 
 # Hardware
 ro.hardware.chipname           u:object_r:exported_default_prop:s0
+
+# MIUI
+ro.miui.region                      u:object_r:exported_system_prop:s0
+ro.miui.build.region                u:object_r:exported_system_prop:s0
 
