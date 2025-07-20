@@ -206,7 +206,7 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 CONFIG_ACS := true
 CONFIG_IEEE80211AC := true
-CONFIG_IEEE80211AX := true
+WIFI_FEATURE_HOSTAPD_11AX := true
 
 # Inherit proprietary blobs
 include vendor/xiaomi/sm8350-common/BoardConfigVendor.mk
