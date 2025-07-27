@@ -161,6 +161,10 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
+ifneq (,$(filter user, $(TARGET_BUILD_VARIANT)))
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/test
+endif
+
 # Soong
 SOONG_CONFIG_NAMESPACES += xiaomiSm8350Vars
 SOONG_CONFIG_xiaomiSm8350Vars += \
