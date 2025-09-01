@@ -19,6 +19,7 @@ from extract_utils.main import (
 
 namespace_imports = [
     'device/xiaomi/sm8350-common',
+    'hardware/dolby',
     'hardware/qcom-caf/sm8350',
     'hardware/qcom-caf/wlan',
     'hardware/xiaomi',
@@ -64,10 +65,12 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/android.hardware.secure_element@1.0-impl.so': blob_fixup()
         .remove_needed('android.hidl.base@1.0.so'),
         ('vendor/lib64/c2.dolby.avc.dec.so', 'vendor/lib64/c2.dolby.avc.sec.dec.so', 'vendor/lib64/c2.dolby.hevc.dec.so', 'vendor/lib64/c2.dolby.hevc.sec.dec.so'): blob_fixup()
+        .add_needed('libcodec2_shim.so')
         .add_needed('libstagefright_foundation-v33.so'),
         ('vendor/bin/hw/dolbycodec2'): blob_fixup()
-        .add_needed('libstagefright_foundation-v33.so'),
+        .add_needed('libshim_dolby.so'),
         ('vendor/lib64/c2.dolby.client.so'): blob_fixup()
+        .add_needed('libcodec2_shim.so')
         .add_needed('libcodec2_hidl_shim.so'),
 }  # fmt: skip
 
