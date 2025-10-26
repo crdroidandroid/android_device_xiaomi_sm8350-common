@@ -471,6 +471,9 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
+# Power-off charging daemon - from star OS2.0.1.0.UKACNXM
+system/bin/charger:system/bin/chargeonlymode|60b2a19b8c9e666b668bd7499beb4387
+
 # QCV
 vendor/bin/init.qti.qcv.sh
 vendor/etc/init/init.qti.qcv.rc
