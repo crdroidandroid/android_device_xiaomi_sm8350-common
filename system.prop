@@ -4,9 +4,6 @@ ro.config.media_vol_steps=30
 # Bluetooth
 vendor.bluetooth.soc=hastings
 
-# Charger
-ro.charger.enable_suspend=true
-
 # CNE
 persist.vendor.cne.feature=1
 
