@@ -423,6 +423,9 @@ vendor/lib64/libqtikeymaster4.so
 
 # Listen
 vendor/lib/hw/sound_trigger.primary.lahaina.so
+vendor/lib/libcapiv2svacnn.so
+vendor/lib/libcapiv2svarnn.so
+vendor/lib/libcapiv2vop.so
 vendor/lib/libgcs-calwrapper.so
 vendor/lib/libgcs-ipc.so
 vendor/lib/libgcs-osal.so
