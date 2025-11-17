@@ -160,6 +160,10 @@ PRODUCT_COPY_FILES += \
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
+# DeviceAsWebcam
+PRODUCT_PACKAGES += \
+    DeviceAsWebcam
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
