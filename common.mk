@@ -167,6 +167,10 @@ PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 PRODUCT_PACKAGES += \
     XiaomiParts
 
+# DeviceAsWebcam
+PRODUCT_PACKAGES += \
+    DeviceAsWebcam
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
