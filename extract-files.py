@@ -72,6 +72,8 @@ blob_fixups: blob_fixups_user_type = {
         ('vendor/lib64/c2.dolby.client.so'): blob_fixup()
         .add_needed('libcodec2_shim.so')
         .add_needed('libcodec2_hidl_shim.so'),
+    'vendor/etc/qcril_database/upgrade/config/6.0_config.sql': blob_fixup()
+        .regex_replace('"persist.vendor.radio.redir_party_num", "true"', '"persist.vendor.radio.redir_party_num", "false"'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

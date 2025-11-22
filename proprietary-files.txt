@@ -644,6 +644,9 @@ vendor/lib64/libqrtr.so
 # RIL - from miui_STAR
 vendor/bin/netmgrd|74ba32ce3ecdfb9974e1de29740b7b37
 
+# RIL patched
+vendor/etc/qcril_database/upgrade/config/6.0_config.sql|af86e7a9805f112820212e0d59bac3c1e5f606f9|af86e7a9805f112820212e0d59bac3c1e5f606f9
+
 # RIL
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
@@ -673,7 +676,6 @@ vendor/etc/init/vendor.qti.rmt_storage.rc
 vendor/etc/init/vendor.qti.tftp.rc
 vendor/etc/qcril_database/qcrilNr.db
 vendor/etc/qcril_database/upgrade/config/10.0_config.sql
-vendor/etc/qcril_database/upgrade/config/6.0_config.sql
 vendor/etc/qcril_database/upgrade/config/7.0_config.sql
 vendor/etc/qcril_database/upgrade/config/8.0_config.sql
 vendor/etc/qcril_database/upgrade/config/9.0_config.sql
