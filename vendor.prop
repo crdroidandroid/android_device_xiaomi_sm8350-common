@@ -145,7 +145,7 @@ ro.bluetooth.a2dp_offload.supported=true
 # Camera
 camera.disable_zsl_mode=true
 ro.hardware.camera=xiaomi
-vendor.camera.aux.packagelist=com.snapchat.android
+vendor.camera.aux.packagelist=com.snapchat.android,org.lineageos.aperture,org.lineageos.aperture.dev
 
 # Chipset
 ro.soc.manufacturer=QTI
