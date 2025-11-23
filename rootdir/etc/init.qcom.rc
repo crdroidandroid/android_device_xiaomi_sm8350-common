@@ -239,9 +239,6 @@ on property:sys.boot_completed=1
     # Reinit lmkd to reconfigure lmkd properties
     setprop lmkd.reinit 1
 
-    # Set zRAM compression algorithm to lz4kd
-    write /sys/block/zram0/comp_algorithm lz4kd
-
 service vendor.qrtr-ns /vendor/bin/qrtr-ns -f
     class core
     user vendor_qrtr
