@@ -56,6 +56,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libcrypto_shim.so'),
     'vendor/lib64/android.hardware.secure_element@1.0-impl.so': blob_fixup()
         .remove_needed('android.hidl.base@1.0.so'),
+    'system_ext/lib64/libwfdnative.so': blob_fixup()
+        .add_needed('libinput_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
