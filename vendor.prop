@@ -199,6 +199,7 @@ debug.sf.region_sampling_duration_ns=8333333
 debug.sf.region_sampling_period_ns=99999984
 debug.sf.region_sampling_timer_timeout_ns=99999984
 debug.sf.treat_170m_as_sRGB=1
+debug.sf.enable_egl_image_tracker=0
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
