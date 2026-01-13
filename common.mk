@@ -32,7 +32,6 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libtinycompress \
     libvolumelistener
 
 PRODUCT_PACKAGES += \
@@ -45,6 +44,13 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.service \
     android.hardware.soundtrigger@2.3-impl
+
+PRODUCT_PACKAGES += \
+    liba2dpoffload \
+    libbatterylistener \
+    libhdmiedid \
+    libhfp \
+    libsndmonitor
 
 PRODUCT_COPY_FILES += \
     hardware/qcom-caf/sm8350/audio/configs/lahaina/audio_tuning_mixer.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio_tuning_mixer.txt
