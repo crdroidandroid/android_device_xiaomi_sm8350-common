@@ -223,10 +223,6 @@ on post-fs-data
     chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm_enabled
     chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm_enabled
 
-    # Allow systemto modify High Touch Sampling Rate
-    chown system system /sys/devices/virtual/touch/touch_dev/bump_sample_rate
-    chmod 0660 /sys/devices/virtual/touch/touch_dev/bump_sample_rate
-
 on property:sys.boot_completed=1
     # Enable UFS clock scaling back
     write /sys/bus/platform/devices/1d84000.ufshc/clkscale_enable 1
