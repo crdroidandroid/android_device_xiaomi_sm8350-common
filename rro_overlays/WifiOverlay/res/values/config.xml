@@ -88,4 +88,7 @@
          channels this should be empty. Values is a comma separated channel string and/or channel
          range string like '1-6,11'. -->
     <string translatable="false" name="config_wifiSoftap2gChannelList"></string>
+
+    <!-- Enable support for P2P -->
+    <bool name="config_wifi_p2p_support">true</bool>
 </resources>
