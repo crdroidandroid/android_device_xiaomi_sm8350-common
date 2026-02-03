@@ -2,11 +2,8 @@ allow system_app sysfs_thermal:file write;
 allow system_app sysfs_thermal:file rw_file_perms;
 
 # DC Dimming and HBM
-type sysfs_dsi_display_primary;
 allow system_app vendor_sysfs_graphics:dir search;
 allow system_app vendor_sysfs_graphics:file { getattr open write };
-allow system_app sysfs_dsi_display_primary:dir search;
-allow system_app sysfs_dsi_display_primary:file write;
 
 # Aware
 get_prop(system_app, vendor_aware_available_prop)
