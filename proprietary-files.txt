@@ -1,6 +1,4 @@
-# All unpinned blobs below are extracted from redwood OS2.0.11.0.UMSMIXM
-# dada: dada OS2.0.217.0.WOCMIXM
-# sunstone: sunstone OS2.0.4.0.UMQMIXM
+# All unpinned blobs below are extracted from haydn V816.0.18.0.UKKMIXM
 
 # ADSP
 vendor/bin/adsprpcd
@@ -150,7 +148,7 @@ vendor/lib64/libsdm-disp-vndapis.so|dc3ff8c971bbcb0d1b9e5079324d1d1d05a1fd39
 vendor/lib64/libsdmextension.so|161a19a7e915174ff31a2ed05acbf0fc98368bb8
 vendor/lib64/libtinyxml2_1.so|11ceb3f1e7650c41621d47e5ec5567c8f466086e
 
-# Display HDR - from sunstone
+# Display HDR - from sunstone V816.0.8.0.UMQMIXM
 vendor/lib64/libhdr_tm.so|7954c5cd5c0b23fe8d0609361c22d24c59f1448b
 
 # Display postprocessing
