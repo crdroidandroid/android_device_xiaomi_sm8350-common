@@ -194,7 +194,6 @@ echo 325 > /proc/sys/kernel/walt_low_latency_task_threshold
 echo 0-3 > /dev/cpuset/background/cpus
 echo 0-3 > /dev/cpuset/restricted/cpus
 echo 0-3 > /dev/cpuset/system-background/cpus
-echo 0-6 > /dev/cpuset/foreground/cpus
 echo 1-2 > /dev/cpuset/audio-app/cpus
 
 # configure governor settings for silver cluster
