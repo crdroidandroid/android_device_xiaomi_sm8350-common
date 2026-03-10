@@ -56,6 +56,9 @@ on property:vendor.post_boot.parsed=1
     # Dynamically set IRQ affinity for KGSL and DRM
     exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.lahaina.perf.sh
 
+    # Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
+
 on property:persist.sys.device_provisioned=1
     setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,6
     setprop dalvik.vm.dex2oat-threads 6
