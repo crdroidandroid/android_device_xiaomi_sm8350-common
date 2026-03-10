@@ -1,3 +1,6 @@
+# Adaptive Suspend
+suspend.short_suspend_threshold_millis=5000
+
 # Audio
 aaudio.hw_burst_min_usec=2000
 aaudio.mmap_exclusive_policy=2
