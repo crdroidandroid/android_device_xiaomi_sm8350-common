@@ -244,6 +244,7 @@ ro.vendor.se.type=eSE,HCE,UICC
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
+vendor.perf.framepacing.enable=1
 
 # Radio
 keyguard.no_require_sim=true
