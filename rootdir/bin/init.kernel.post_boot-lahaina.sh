@@ -94,7 +94,7 @@ function configure_memory_parameters() {
 	#
 
 	configure_zram_parameters
-	echo 60 > /proc/sys/vm/swappiness
+	echo 80 > /proc/sys/vm/swappiness
 	echo 1 > /proc/sys/vm/watermark_scale_factor
 
 	# add memory limit to camera cgroup
