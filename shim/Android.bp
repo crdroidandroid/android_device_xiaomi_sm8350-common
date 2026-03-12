@@ -1,0 +1,14 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library {
+    name: "libmisightjson_shim",
+    srcs: [
+        "libmisightjson/json_value.cpp",
+    ],
+	shared_libs: ["libjsoncpp"],
+    compile_multilib: "both",
+    vendor: true,
+}
