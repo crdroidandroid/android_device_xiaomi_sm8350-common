@@ -458,9 +458,6 @@ vendor/lib/libqcodec2_utils.so
 vendor/lib/libqcodec2_v4l2codec.so
 vendor/lib64/libmmosal.so;MODULE_SUFFIX=_vendor
 
-# Media (Dolby Vision)
-vendor/etc/vintf/manifest/c2_manifest_vendor.xml
-
 # Media (Dolby Vision) - standalone
 vendor/bin/hw/dolbycodec2|807b8f8e6bb4e16d8b03df5a9069053f92f0c63a
 vendor/etc/dolby_vision.cfg|65553ce093cc9604d7ef512ff38840878bdd91fc
