@@ -458,21 +458,6 @@ vendor/lib/libqcodec2_utils.so
 vendor/lib/libqcodec2_v4l2codec.so
 vendor/lib64/libmmosal.so;MODULE_SUFFIX=_vendor
 
-# Media (Dolby Vision) - standalone
-vendor/bin/hw/dolbycodec2|807b8f8e6bb4e16d8b03df5a9069053f92f0c63a
-vendor/etc/dolby_vision.cfg|65553ce093cc9604d7ef512ff38840878bdd91fc
-vendor/etc/init/vendor.dolbyvision.media.c2@1.0-service.rc|1ea8b363e94fd4f5410cadceb30de8229fb38045
-vendor/lib64/c2.dolby.avc.dec.so|1eafca128c3d225a908b5b6dde156916b9bd851f|eb0e45cb3427da04f4345f0370b9a76106838de8
-vendor/lib64/c2.dolby.avc.sec.dec.so|44c8dc52d739106b8e35a6039e362f2169cef83f|273162580a4e8d138ced6754450b3154ad3dc517
-vendor/lib64/c2.dolby.client.so|6bd94830612d0a43a9619a0be2ce99fd1080b7fd|dc135bd5ba49ba920fefe6bfb924374eed6f93e4
-vendor/lib64/c2.dolby.egl.so|1f3faa3248175c368fd80b8b9fb02792df0a32d2
-vendor/lib64/c2.dolby.hevc.dec.so|6b1abd0bd177d8832ee9fa81c3f0e2897e3d98d5|a4af0b6ec52689347a17a69fa0531004abe404a6
-vendor/lib64/c2.dolby.hevc.enc.so|c00fdd278b6e37d2fdc1438d27127c10919b4bf2
-vendor/lib64/c2.dolby.hevc.sec.dec.so|0f66b89ff9a2571d965827fe755da706b8454490|3918e35c3b5d37793cac7f760f528cbf1bd98dc4
-vendor/lib64/c2.dolby.store.so|9601bb002bef89b95dec41ba73fbfed9af42a0f3
-vendor/lib64/libdolbyottcameracontrol.so|ca8df23632defd476572bf3b56006cb53137e3d8
-vendor/lib64/libdolbyvision.so|10c603348c413d6e27be6020114741e0bb29fe0b
-
 # Media configs
 vendor/etc/media_codecs.xml
 vendor/etc/media_codecs_google_audio.xml
