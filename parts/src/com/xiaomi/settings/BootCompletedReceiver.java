@@ -17,7 +17,7 @@ import android.view.Display;
 import android.view.Display.HdrCapabilities;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
-    private static final String TAG = "XiaomiParts";
+    private static final String TAG = "DVParts";
     private static final boolean DEBUG = true;
 
     @Override

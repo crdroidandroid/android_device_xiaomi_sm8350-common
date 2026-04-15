@@ -332,7 +332,7 @@ PRODUCT_PACKAGES += \
 
 # Parts
 PRODUCT_PACKAGES += \
-    XiaomiParts
+    DVParts
 
 # Partitions
 PRODUCT_PACKAGES += \
