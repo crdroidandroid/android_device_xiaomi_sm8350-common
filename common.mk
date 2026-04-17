@@ -58,8 +58,7 @@ PRODUCT_PACKAGES += \
     audioadsprpcd \
     audio.primary.lahaina \
     audio.r_submix.default \
-    audio.usb.default \
-    sound_trigger.primary.lahaina
+    audio.usb.default
 
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
