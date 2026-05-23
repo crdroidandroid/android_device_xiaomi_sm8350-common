@@ -171,10 +171,14 @@ PRODUCT_COPY_FILES += \
     hardware/qcom-caf/sm8350/display/config/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml
 
 # Dolby
+ifeq ($(TARGET_INCLUDES_DOLBY),true)
 $(call inherit-product-if-exists, hardware/dolby/dolby.mk)
+endif
 
+ifeq ($(TARGET_INCLUDES_ViperFX),true)
 PRODUCT_PACKAGES += \
     ViPER4AndroidFX
+endif
 
 # DRM
 PRODUCT_PACKAGES += \
