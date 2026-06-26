@@ -74,7 +74,11 @@ DEVICE_MANIFEST_FILE += \
     $(COMMON_PATH)/hidl/manifest_lahaina.xml \
     $(COMMON_PATH)/hidl/manifest_xiaomi.xml
 
+ifeq ($(TARGET_INCLUDES_DolbyVision),true)
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/hidl/vision/c2_manifest_vendor.xml
+else
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/hidl/c2_manifest_vendor.xml
+endif
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
