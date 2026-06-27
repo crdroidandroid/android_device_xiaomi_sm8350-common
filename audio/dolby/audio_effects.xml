@@ -56,9 +56,9 @@
         <!--DOLBY VQE-->
         <library name="vqe" path="libswvqe.so"/>
         <!--DOLBY END-->
-        <!--Spatial Audio-->
-        <library name="spatializer" path="libspatialaudio.so"/>
-	<!--Spatial Audio-->
+        <!--DOLBY SPATIALIZER-->
+        <library name="spatializer" path="libswspatializer.so"/>
+        <!--DOLBY SPATIALIZER-->
     </libraries>
     <effects>
         <effectProxy name="bassboost" library="proxy" uuid="14804144-a5ee-4d24-aa88-0002a5d5c51b">
@@ -123,9 +123,9 @@
         <!--DOLBY VQE-->
         <effect name="vqe" library="vqe" uuid="64a0f614-7fa4-48b8-b081-d59dc954616f"/>
         <!--DOLBY END-->
-        <!--Spatial Audio-->
-        <effect name="spatializer" library="spatializer" uuid="cc4677de-ff72-11eb-9a03-0242ac130003"/>
-	<!--Spatial Audio-->
+        <!--DOLBY SPATIALIZER-->
+        <effect name="spatializer" library="spatializer" uuid="ccd4cf09-a79d-46c2-9aae-06a1698d6c8f"/>
+        <!--DOLBY SPATIALIZER-->
     </effects>
     <postprocess>
         <stream type="voice_call">
