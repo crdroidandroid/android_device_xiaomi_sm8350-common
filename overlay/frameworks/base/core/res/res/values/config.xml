@@ -247,10 +247,12 @@
 
     <!-- Indicate available ColorDisplayManager.COLOR_MODE_xxx. -->
     <integer-array name="config_availableColorModes">
-        <item>0</item> <!-- COLOR_MODE_NATURAL   -->
-        <item>1</item> <!-- COLOR_MODE_BOOSTED   -->
-        <item>2</item> <!-- COLOR_MODE_SATURATED -->
-        <item>3</item> <!-- COLOR_MODE_AUTOMATIC -->
+        <item>0</item> <!-- standard_native -->
+        <item>1</item> <!-- standard_P3 -->
+        <item>266</item> <!-- expert_native -->
+        <item>267</item> <!-- expert_srgb -->
+        <item>268</item> <!-- expert_dcip3 -->
+        <item>270</item> <!-- expert_transition -->
     </integer-array>
 
     <!-- Color mode to use when accessibility transforms are enabled. This color mode must be
@@ -270,15 +272,19 @@
          If a color mode does not have a corresponding color space specified in this array, the
          currently set composition color space will not be modified.-->
     <integer-array name="config_displayCompositionColorModes">
-        <item>0</item> <!-- COLOR_MODE_NATURAL   -->
-        <item>1</item> <!-- COLOR_MODE_BOOSTED   -->
-        <item>2</item> <!-- COLOR_MODE_SATURATED -->
-        <item>3</item> <!-- COLOR_MODE_AUTOMATIC -->
+        <item>0</item> <!-- standard_native -->
+        <item>1</item> <!-- standard_P3 -->
+        <item>266</item> <!-- expert_native -->
+        <item>267</item> <!-- expert_srgb -->
+        <item>268</item> <!-- expert_dcip3 -->
+        <item>270</item> <!-- expert_transition -->
     </integer-array>
     <integer-array name="config_displayCompositionColorSpaces">
-        <item>0</item> <!-- COLOR_MODE_DEFAULT    -->
-        <item>0</item> <!-- COLOR_MODE_DEFAULT    -->
-        <item>0</item> <!-- COLOR_MODE_DEFAULT    -->
+        <item>0</item> <!-- COLOR_MODE_DEFAULT -->
+        <item>9</item> <!-- COLOR_MODE_DISPLAY_P3 -->
+        <item>0</item> <!-- COLOR_MODE_DEFAULT -->
+        <item>7</item> <!-- COLOR_MODE_SRGB -->
+        <item>9</item> <!-- COLOR_MODE_DISPLAY_P3 -->
         <item>9</item> <!-- COLOR_MODE_DISPLAY_P3 -->
     </integer-array>
 
