@@ -198,6 +198,11 @@ ifeq ($(TARGET_INCLUDES_DOLBY),true)
 $(call inherit-product-if-exists, hardware/dolby/dolby.mk)
 endif
 
+ifeq ($(TARGET_INCLUDES_DolbyVision),true)
+PRODUCT_PACKAGES += \
+    DVParts
+endif
+
 ifeq ($(TARGET_INCLUDES_ViperFX),true)
 PRODUCT_PACKAGES += \
     ViPER4AndroidFX
@@ -359,10 +364,6 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
     DeviceAsWebcamOverlayCommon
-
-# Parts
-PRODUCT_PACKAGES += \
-    DVParts
 
 # Partitions
 PRODUCT_PACKAGES += \
