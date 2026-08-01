@@ -26,6 +26,11 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 # API
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+#ART
+WITH_DEXPREOPT := true
+DEX_PREOPT_DEFAULT := generate-vdex-and-image
+WITH_DEXPREOPT_DEBUG_INFO := false
+
 # Audio
 PRODUCT_PACKAGES += \
     libqcompostprocbundle \
